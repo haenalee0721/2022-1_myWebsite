@@ -1,0 +1,165 @@
+body{
+	font-family: 'Cabin', sans-serif;
+}
+
+/*프로그램 이름 부분*/
+#top_header{ display: block;
+			border: 1px solid;
+ 			padding-left:  3px ;
+			height: 48px;
+			overflow: hidden;}
+
+.haena_blog {display: inline-block;
+		 	 height: 25px;
+			 margin: 0 auto;
+			 text-align: top;
+			} 
+.haena_icon{	
+		display: inline-block;
+		height:  25px;
+		float: left;
+			}
+.esc{
+			display: inline-block;
+		 	 height: 25px;
+			 margin: 0 auto;
+			 float: right;
+
+}
+.File{
+	border-top: 1px solid;
+	overflow: hidden;
+	height: 20px;
+	margin: 0;
+	padding: 1px;
+}
+
+/*O라디오버튼 안보이게*/
+input:nth-of-type(1) { display: none; }
+input:nth-of-type(2) { display: none; }
+input:nth-of-type(3) { display: none; }
+input:nth-of-type(4) { display: none; }
+
+/*O체크 된 버튼 보이게*/
+input:nth-of-type(1):checked ~ section.section_tap>label:nth-of-type(1) { background-color: rgb(48,56,65); }
+input:nth-of-type(2):checked ~ section.section_tap>label:nth-of-type(2) { background-color: rgb(48,56,65); }
+input:nth-of-type(3):checked ~ section.section_tap>label:nth-of-type(3) { background-color: rgb(48,56,65); }
+input:nth-of-type(4):checked ~ section.section_tap>label:nth-of-type(4) { background-color: rgb(48,56,65); }
+
+/*체크 된 내용만 보이게*/
+input:nth-of-type(1) ~ section.main_tap>div:nth-of-type(1) { display: none; }
+input:nth-of-type(1):checked ~ section.main_tap>div:nth-of-type(1){display: block;}
+input:nth-of-type(2) ~ section.main_tap>div:nth-of-type(2) { display: none; }
+input:nth-of-type(2):checked ~ section.main_tap>div:nth-of-type(2){display: block;}
+input:nth-of-type(3) ~ section.main_tap>div:nth-of-type(3) { display: none; }
+input:nth-of-type(3):checked ~ section.main_tap>div:nth-of-type(3){display: block;}
+input:nth-of-type(4) ~ section.main_tap>div:nth-of-type(4) { display: none; }
+input:nth-of-type(4):checked ~ section.main_tap>div:nth-of-type(4) {display: block;}
+
+/*화면 설정*/
+section.main_tap{
+	background-color: rgb(48,56,65);
+	color: white;
+	
+}
+
+/*탭바 설정*/
+section.section_tap {overflow: hidden;
+					 display: block;
+					 background: rgb(114,120,126);}
+section.section_tap>label{
+
+					display: block;
+					float: left;
+					background: rgb(114,120,126);
+					color: white;
+					float: left;
+					width: 180px;
+					height: 16.5px;
+					padding: 10px;
+					margin-top: 3.5px;
+					border-left: 1px solid;
+					text-align: left;
+					line-height: 20px;
+					border-radius: 10px 10px 0 0;
+
+}
+
+
+input:nth-of-type(1):hover ~ section.section_tap>label:nth-of-type(1) { background-color: rgb(79,87,94); }
+input:nth-of-type(2):hover ~ section.section_tap>label:nth-of-type(2) { background-color: rgb(79,87,94); }
+input:nth-of-type(3):hover ~ section.section_tap>label:nth-of-type(3) { background-color: rgb(79,87,94); }
+input:nth-of-type(4):hover ~ section.section_tap>label:nth-of-type(4) { background-color: rgb(79,87,94); }
+
+
+/*이해나*/
+
+.haena_intro{
+	padding: 20px;
+}
+.haena_intro>p{
+	color: green;
+	font-size: 20px;
+}
+
+/*QnA*/
+.QnA{
+	list-style: none;
+	padding: 20px;
+}
+.QnA>p{
+	color: green;
+	font-size: 20px;
+}
+
+/*나의 소중한 기억*/
+.haena_memory{
+	padding: 20px;
+}
+.haena_memory>p{
+	color: green;
+	font-size: 20px;
+}
+
+/*이야기*/
+.story {
+	padding: 50px;
+}
+.story >p{
+	color: green;
+	font-size: 20px;
+}
+.art{
+	overflow: hidden;
+}
+.photo{
+	float: left;
+	margin: 10px;
+}
+.cont{
+	float: left;
+	width: 600px;
+	overflow: hidden;
+	padding: 30px;
+	margin-top: 30px;
+
+}
+
+
+/*맨밑*/
+#footer{
+	display: block;
+	border: 1px solid;
+	overflow: hidden;
+	height: 20px;
+	color: rgb(48,56,65);
+	background-color: rgb(199,203,206) ;
+}
+.left{display: inline-block;
+	text-align: left;
+	margin: 0;
+	padding: 0;}
+.right{display: inline-block;
+	float: right;
+	margin: 0;
+	padding: 0;}		
